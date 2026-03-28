@@ -1,0 +1,16 @@
+User: write a function
+Assistant: Sure! What should the function do?
+
+User: make it sort a list
+Assistant: Here's a sort function:
+def sort_list(lst):
+    return sorted(lst)
+
+User: In Python, write a function named `sort_products` that takes a list of product dicts (each with keys: name, price, stock) and returns the list sorted by price ascending, then by name alphabetically. Include type hints and a docstring with a usage example.
+Assistant: [generated detailed implementation]
+
+User: The above function doesn't handle None prices. Add a guard that moves None-priced items to the end of the sorted result. Keep the existing signature and docstring, just add a note about the None behavior.
+Assistant: [updated implementation with None guard]
+
+User: Write unit tests for sort_products using pytest. Cover: empty list, single item, identical prices, None prices, and a 10-item mixed dataset. Use parameterize where it makes sense.
+Assistant: [generated comprehensive test suite]

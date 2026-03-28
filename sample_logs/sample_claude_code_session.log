@@ -1,0 +1,24 @@
+❯ fix the auth bug
+
+⏺ I'll look into the authentication issue. Let me start by reading the relevant files.
+
+⏺ Read(src/auth/middleware.py)
+  ...
+
+⏺ I found the issue — the JWT expiry check uses < instead of <=. Here's the fix:
+  [code patch shown]
+
+❯ add tests for that
+
+⏺ I'll write pytest tests for the JWT expiry edge case.
+
+⏺ Write(tests/test_auth_middleware.py)
+  ...
+
+❯ In Python using pytest, write unit tests for the `verify_token(token: str) -> dict` function in src/auth/middleware.py. Cover: expired token, valid token, malformed token, and missing signature. Use freezegun to control time. Mock the secret key via monkeypatch.
+
+⏺ [generated comprehensive test suite with all four cases]
+
+❯ The tests pass locally but fail in CI because the secret key env var isn't set. Update the fixture so it sets JWT_SECRET=test-secret via monkeypatch and doesn't depend on .env.
+
+⏺ [updated fixture]
