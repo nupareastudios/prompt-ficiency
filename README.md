@@ -1,6 +1,6 @@
-# Code-Assist Usage Evaluator (Prompt-ficiency)
+# Prompt-ficiency (Code-Assist Usage Evaluator)
 
-Code-Assist Usage Evaluator evaluates how effectively users are leveraging AI coding tools (such as GitHub Copilot, Claude Code, Cursor, etc.). It analyzes user prompt logs using a LangChain Deep Agent backed by Azure OpenAI and provides insightful feedback.
+Prompt-ficiency evaluates how effectively users are leveraging AI coding tools (such as GitHub Copilot, Claude Code, Cursor, etc.). It analyzes user prompt logs using a LangChain Deep Agent backed by Azure OpenAI and provides insightful feedback.
 
 ## Features
 
